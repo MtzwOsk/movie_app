@@ -21,12 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # for that stage of product not hide senitive
-SECRET_KEY = '7*a1q)hxf&lpx9wuf*722o=p885f@o@0or3@9$t2sxsr%n4qo-'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['movies-app-search.herokuapp.com']
 
 
 # Application definition
